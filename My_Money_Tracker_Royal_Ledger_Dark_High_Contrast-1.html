@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#101b35"><title>My Money · The Royal Ledger</title>
+<style>
+ :root{color-scheme:dark;--bg:#090d16;--paper:#121a29;--ink:#e8e5dc;--muted:#a2a8b6;--line:#273247;--green:#72c7a0;--mint:#142b28;--red:#ff8b91;--rose:#321c28;--gold:#d8b86d;--amber:#292519;--nav:#0c1321;--blue:#8bb9f0;--shadow:0 9px 28px #0006}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% 0,#fffaf0 0,transparent 42%),var(--bg);color:var(--ink);font:15px/1.48 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}header{position:relative;overflow:hidden;background:radial-gradient(ellipse at 90% 0,#31466e 0,transparent 48%),linear-gradient(145deg,#101b35,#17294a 65%,#243b5b);color:#fff;padding:24px 18px 25px;border-radius:0 0 30px 30px;box-shadow:0 12px 30px #101b351b}header:after{content:"✡";position:absolute;right:-12px;bottom:-52px;font-size:190px;line-height:1;color:#d7b66b;opacity:.07;pointer-events:none}.top{display:flex;align-items:center;justify-content:space-between;gap:10px;position:relative;z-index:1}.brand{display:flex;align-items:center;gap:11px}.logo{height:46px;width:46px;border-radius:15px;background:linear-gradient(145deg,#f5e5b8,#c7a45b);color:#17233d;display:grid;place-items:center;font-size:25px;font-weight:900;box-shadow:inset 0 0 0 1px #fff8}.brand small{display:block;color:#d4c69f;font-size:10px;letter-spacing:1.8px}.brand b{font-size:19px;letter-spacing:.2px}.monthpill{background:#ffffff12;border:1px solid #ffffff36;border-radius:12px;padding:8px;color:#fff;max-width:145px}header .welcome{margin:23px 0 5px;color:#d9bd79;font-size:10px;font-weight:750;letter-spacing:2.2px;position:relative;z-index:1}header h1{font-family:Georgia,"Times New Roman",serif;font-size:29px;line-height:1.14;margin:0 0 9px;letter-spacing:-.4px;position:relative;z-index:1}header p{margin:0;color:#e0e5ed;font-size:13px;position:relative;z-index:1}.wrap{max-width:780px;margin:auto;padding:14px 13px 100px}.sectionhead{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:20px 2px 11px}.sectionhead h2{font-family:Georgia,"Times New Roman",serif;font-size:18px;margin:0;letter-spacing:.1px}.sub{color:var(--muted);font-size:12px}.card{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:16px;margin-bottom:13px;box-shadow:var(--shadow)}.hero-card{position:relative;overflow:hidden;background:linear-gradient(135deg,#fffdf8,#f5eedc);border-color:#dfd0a9}.hero-card:after{content:"✡";position:absolute;right:12px;top:4px;font-size:88px;color:#b18c43;opacity:.09;pointer-events:none}.label{font-size:12px;color:var(--muted)}.bigmoney{font-family:Georgia,"Times New Roman",serif;font-size:32px;font-weight:700;letter-spacing:-.6px;margin:6px 0;color:#17233d}.inline{display:flex;align-items:center;justify-content:space-between;gap:10px}.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.stat{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:14px;min-width:0;box-shadow:0 4px 15px #19233b08}.stat .icon{width:34px;height:34px;display:grid;place-items:center;border-radius:12px;margin-bottom:9px;font-size:17px;background:#eee5d0;color:#72551f}.stat strong{display:block;font-size:20px;margin-top:4px;overflow-wrap:anywhere}.green{color:var(--green)}.red{color:var(--red)}.gold{color:var(--gold)}.blue{color:var(--blue)}.muted{color:var(--muted)}.progress{height:8px;background:#eee8dc;border-radius:20px;overflow:hidden;margin:10px 0 5px}.progress span{display:block;height:100%;background:linear-gradient(90deg,#8b6a2e,#d2b46c);width:0;border-radius:20px;transition:width .2s}.progress.redbar span{background:var(--red)}.tabs{display:flex;gap:6px;overflow:auto;padding:2px 1px 8px;margin-bottom:8px;scrollbar-width:none}.tabs button{white-space:nowrap;flex:1;min-width:max-content;border:1px solid var(--line);border-radius:12px;background:#f7f2e8;color:var(--muted);padding:10px 12px;font-weight:650}.tabs button.active{background:var(--nav);color:white;border-color:var(--nav)}label{display:block;font-size:12px;color:var(--muted);margin:11px 0 5px}input,select,textarea{width:100%;padding:11px 12px;border:1px solid #ded5c4;border-radius:12px;background:#fffdf9;color:var(--ink);outline:none;min-height:44px}input:focus,select:focus,textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px #a57a2b18}button.primary{border:0;background:linear-gradient(135deg,#1c2b4a,#101b35);color:#fff;border-radius:12px;padding:12px 15px;font-weight:700;box-shadow:0 4px 12px #101b351b}button.soft{border:1px solid #dfd4be;background:#f5eedf;color:var(--ink);border-radius:12px;padding:11px 13px;font-weight:650}button.danger{border:1px solid #efcccc;background:var(--rose);color:var(--red);border-radius:10px;padding:8px 10px;font-weight:650}button.tiny{padding:5px 8px;font-size:11px;border-radius:8px}.row{display:flex;gap:9px;align-items:end}.row>*{flex:1;min-width:0}.hidden{display:none!important}.divider{height:1px;background:linear-gradient(90deg,transparent,#dfd1b5,transparent);margin:14px 0}.entrygrid{display:grid;grid-template-columns:1fr 1fr;gap:0 10px}.entrygrid .full{grid-column:1/-1}.notice{background:var(--amber);color:#76551a;border:1px solid #ead9b3;padding:11px 12px;border-radius:13px;font-size:12px;margin:12px 0}.minirow{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:11px 0;border-top:1px solid var(--line)}.minirow:first-child{border-top:0}.txlist{margin-top:5px}.tx{display:flex;gap:10px;align-items:center;padding:12px 0;border-top:1px solid var(--line)}.tx:first-child{border-top:0}.txicon{width:39px;height:39px;flex:0 0 39px;border-radius:13px;background:#eee7d8;color:#7b6029;display:grid;place-items:center;font-size:17px}.txmain{flex:1;min-width:0}.txmain b{display:block;font-size:14px;overflow-wrap:anywhere}.txmain small{font-size:11px;color:var(--muted)}.txright{text-align:right;white-space:nowrap}.txright b{font-size:14px}.txactions{display:flex;justify-content:flex-end;gap:4px;margin-top:4px}.badge{font-size:10px;padding:3px 7px;border-radius:20px;background:#eee8dc;color:#655b47}.budgetitem{padding:12px 0;border-top:1px solid var(--line)}.budgetitem:first-child{border-top:0}.budgetbar{display:flex;justify-content:space-between;gap:10px;font-size:13px}.budgetbar b{white-space:nowrap}.catbars{display:flex;flex-direction:column;gap:13px}.catrow{display:grid;grid-template-columns:90px 1fr 80px;align-items:center;gap:8px;font-size:12px}.catrow .progress{margin:0}.empty{text-align:center;padding:24px 8px;color:var(--muted);font-size:13px}.bottomnav{position:fixed;bottom:0;left:0;right:0;background:#fffdf8f2;backdrop-filter:blur(16px);border-top:1px solid #e1d6c2;display:flex;justify-content:center;z-index:5;padding:7px max(8px,env(safe-area-inset-right)) calc(7px + env(safe-area-inset-bottom)) max(8px,env(safe-area-inset-left))}.bottomnav button{flex:1;max-width:150px;background:transparent;color:var(--muted);border:0;padding:7px 4px;font-size:11px;font-weight:650}.bottomnav button span{display:block;font-size:19px;margin-bottom:2px}.bottomnav button.active{color:#9b742d}.page{display:none}.page.active{display:block}.foot{text-align:center;color:var(--muted);font-size:11px;padding:17px}.pill{display:inline-block;border-radius:9px;padding:4px 8px;font-size:11px;background:#eee4ca;color:#806024}@media(min-width:620px){.stats{grid-template-columns:repeat(4,minmax(0,1fr))}.wrap{padding-left:20px;padding-right:20px}.bigmoney{font-size:36px}}
+
+/* Low-glare midnight theme: deep navy, soft ivory text, restrained gold accents */
+body{background:radial-gradient(ellipse at 50% 0,#18243a 0,transparent 40%),var(--bg);color:var(--ink)}
+.card,.stat{background:var(--paper);border-color:var(--line);box-shadow:var(--shadow)}
+.hero-card{background:linear-gradient(135deg,#172235,#171e2a);border-color:#665637}
+.bigmoney{color:#f0e4c2}
+.stat .icon,.txicon{background:#252b38;color:#d8b86d}
+.progress{background:#252d3d}
+.tabs button{background:#171f2e;color:#b3bac8;border-color:#303a4e}
+.tabs button.active{background:#b49755;color:#101521;border-color:#b49755}
+input,select,textarea{background:#0e1522;color:#eee9df;border-color:#354057;color-scheme:dark}
+input::placeholder,textarea::placeholder{color:#777f90}
+button.soft{background:#20283a;color:#e8e5dc;border-color:#3a455b}
+button.primary{background:linear-gradient(135deg,#b99b58,#8d7139);color:#111725;box-shadow:0 4px 12px #0004}
+button.danger{background:#321c28;color:#ff9ba1;border-color:#63303b}
+.notice{background:#292519;color:#e0c98f;border-color:#54452b}
+.badge{background:#252c3a;color:#d0c8b5}
+.pill{background:#332c20;color:#e0c27c}
+.bottomnav{background:#0c1321f5;border-color:#273247}
+.bottomnav button.active{color:#d8b86d}
+.divider{background:linear-gradient(90deg,transparent,#3c3a32,transparent)}
+.monthpill{background:#182236;color:#fff;border-color:#4b5870}
+#monthStatus{color:#e9e0c7!important}
+::selection{background:#6c5830;color:#fff}
+/* High-contrast accessibility pass */
+:root{--bg:#070b12;--paper:#111a29;--ink:#f4f5f7;--muted:#c0c8d6;--line:#3b4960;--gold:#f0cf78;--amber:#242116;--blue:#a9d0ff}
+body{background:var(--bg)!important;color:var(--ink)!important}
+body:before{display:none!important}
+.sub,.label,label,.muted,.txmain small,.foot,.empty{color:#c0c8d6!important}
+.sectionhead h2,.card h2,.card h3,.txmain b,.minirow,.budgetbar,.catrow,.stat strong{color:#f4f5f7}
+.notice{color:#f4dfaa!important;background:#242116!important;border-color:#76643a!important}
+input,select,textarea{color:#fff!important;background:#080e18!important;border-color:#53627b!important}
+input::placeholder,textarea::placeholder{color:#aeb8c8!important;opacity:1}
+.tabs button{color:#e0e6f0!important;background:#182235!important;border-color:#46546b!important}
+.tabs button.active{background:#e0bf69!important;color:#101521!important;border-color:#e0bf69!important}
+button.soft{color:#f4f5f7!important;background:#202b3d!important;border-color:#53627b!important}
+button.primary{color:#101521!important;background:#e0bf69!important}
+button.danger{color:#ffc1c5!important}
+.badge{color:#f0e6ce!important;background:#2a3343!important}
+.pill{color:#ffe2a0!important;background:#39301d!important}
+.bottomnav button{color:#c0c8d6!important}
+.bottomnav button.active{color:#f0cf78!important}
+.hero-card{background:#151e2d!important;border-color:#76643a!important}
+.bigmoney{color:#fff0c4!important}
+.stat .icon,.txicon{color:#f0cf78!important;background:#263247!important}
+#monthStatus{color:#f4f5f7!important}
+::placeholder{opacity:1}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+</style></head>
+<body>
+<header><div class="top"><div class="brand"><div class="logo">✡</div><div><small>THE ROYAL LEDGER</small><b>My Money</b></div></div><input class="monthpill" id="dashMonth" type="month" aria-label="Dashboard month"></div><div class="welcome">WISDOM · STEWARDSHIP · PEACE</div><h1>Build a future of blessing.</h1><p>A refined private ledger for every baht earned, spent, and saved.</p></header>
+<div class="wrap">
+<section class="page active" id="page-home">
+ <div class="sectionhead"><h2>Monthly overview</h2><span class="pill" id="monthLabel">This month</span></div>
+ <div class="card hero-card"><div class="label">Available from recorded cash flow</div><div class="bigmoney" id="netMoney">฿0</div><div class="inline"><span class="sub">Payments received minus expenses</span><span class="pill" id="monthStatus">Start tracking</span></div></div>
+ <div class="stats">
+  <div class="stat"><div class="icon">↙</div><div class="label">Salary received</div><strong class="green" id="homeIncome">฿0</strong><div class="sub">Actual payments only</div></div>
+  <div class="stat"><div class="icon">↗</div><div class="label">Spent</div><strong class="red" id="homeExpense">฿0</strong><div class="sub">All recorded expenses</div></div>
+  <div class="stat"><div class="icon">◷</div><div class="label">Salary owed</div><strong class="gold" id="homeOwed">฿0</strong><div class="sub">Outstanding balance</div></div>
+  <div class="stat"><div class="icon">♧</div><div class="label">Savings moved</div><strong class="blue" id="homeSaving">฿0</strong><div class="sub">Recorded transfers</div></div>
+ </div>
+ <div class="sectionhead"><h2>Monthly budget</h2><button class="soft" onclick="go('budget')">Edit plan</button></div>
+ <div class="card"><div class="inline"><span class="label">Spending budget</span><b id="budgetText">฿0 / ฿10,500</b></div><div class="progress" id="budgetProgress"><span></span></div><div class="inline"><span class="sub" id="budgetHint">Set a budget that works for you</span><b id="budgetLeft">฿10,500 left</b></div><div class="divider"></div><div class="inline"><span class="label">Savings goal</span><b id="goalText">฿0 / ฿3,000</b></div><div class="progress"><span id="goalProgress"></span></div><div class="sub" id="goalHint">Every baht counts.</div></div>
+ <div class="sectionhead"><h2>Quick add</h2></div><div class="grid">
+ <button class="primary" onclick="newRecord('expense')">＋ Expense</button><button class="primary" onclick="newRecord('payment')">＋ Salary received</button><button class="soft" onclick="newRecord('salary')">＋ Salary owed</button><button class="soft" onclick="newRecord('saving')">＋ Savings</button></div>
+ <div class="sectionhead"><h2>Recent activity</h2><button class="soft" onclick="go('records')">View all</button></div><div class="card"><div id="recentList" class="txlist"></div></div>
+</section>
+<section class="page" id="page-records">
+ <div class="sectionhead"><h2>Transactions</h2><span class="sub">Edit or delete any record</span></div>
+ <div class="card"><div class="row"><div><label>Type</label><select id="filterType"><option value="all">All records</option><option value="expense">Expenses</option><option value="payment">Salary received</option><option value="salary">Salary owed</option><option value="saving">Savings</option></select></div><div><label>Month</label><input id="filterMonth" type="month"></div></div><div id="allList" class="txlist"></div></div>
+ <div class="card"><h2>Record transaction</h2><div class="tabs" id="recordTabs"><button class="active" data-kind="expense">Expense</button><button data-kind="payment">Income</button><button data-kind="salary">Salary owed</button><button data-kind="saving">Savings</button></div>
+ <form id="recordForm"><input id="recordId" type="hidden"><div class="entrygrid">
+ <div><label>Amount (THB)</label><input id="rAmount" type="number" min="0.01" step="0.01" placeholder="0.00" required></div>
+ <div><label>Date</label><input id="rDate" type="date" required></div>
+ <div id="categoryWrap"><label>Category</label><select id="rCategory"><option>Food & drinks</option><option>Transport</option><option>Phone & internet</option><option>Personal</option><option>Household</option><option>Health</option><option>Family</option><option>Work</option><option>Other</option></select></div>
+ <div id="salaryMonthWrap" class="hidden"><label>Salary month</label><input id="rSalaryMonth" type="month"></div>
+ <div class="full"><label>Note</label><input id="rNote" maxlength="140" placeholder="e.g. Lunch, salary installment, September salary"></div>
+ </div><div class="row" style="margin-top:14px"><button class="primary" id="submitRecord" type="submit">Save expense</button><button class="soft hidden" id="cancelEdit" type="button">Cancel edit</button></div></form></div>
+</section>
+<section class="page" id="page-budget">
+ <div class="sectionhead"><h2>Budget & savings</h2><span class="sub">Set your targets</span></div>
+ <div class="card"><h2>Monthly plan</h2><p class="muted">Your expected salary is separate from cash actually received. Partial payments are recorded as they arrive.</p>
+ <form id="planForm"><label>Expected monthly salary (฿)</label><input id="pSalary" type="number" min="0" step="100" value="13500"><div class="row"><div><label>Expense budget (฿)</label><input id="pBudget" type="number" min="0" step="100" value="10500"></div><div><label>Monthly savings goal (฿)</label><input id="pGoal" type="number" min="0" step="100" value="3000"></div></div><label>Family / future goal name</label><input id="pGoalName" maxlength="80" placeholder="e.g. Family trip fund"><label>Target amount (฿)</label><input id="pGoalAmount" type="number" min="0" step="100" value="30000"><button class="primary" style="width:100%;margin-top:14px">Save budget & goals</button></form></div>
+ <div class="card"><h2>Spending by category</h2><div id="categoryChart" class="catbars"></div></div>
+ <div class="card"><h2>Monthly snapshot</h2><div class="minirow"><span>Expected salary</span><b id="snapExpected">฿13,500</b></div><div class="minirow"><span>Received so far</span><b class="green" id="snapReceived">฿0</b></div><div class="minirow"><span>Salary still owed</span><b class="gold" id="snapOwed">฿0</b></div><div class="minirow"><span>Expenses</span><b class="red" id="snapExpense">฿0</b></div><div class="minirow"><span>Saved</span><b class="blue" id="snapSaving">฿0</b></div></div>
+</section>
+<section class="page" id="page-data">
+ <div class="sectionhead"><h2>Data & backup</h2><span class="sub">Your records stay on this device</span></div>
+ <div class="notice">Safety first: this web version does not connect to Google Drive automatically. Download a JSON backup, then upload that file to Google Drive. If browser storage is cleared, restore using the JSON file.</div>
+ <div class="card"><h2>Backup your records</h2><p class="muted">JSON includes transactions and budget settings. To keep a copy in Google Drive: download the JSON backup, open the Google Drive app, tap + → Upload, and select the downloaded JSON file. To restore later, download that JSON from Drive and choose it below.</p><button class="primary" style="width:100%" id="exportJson">Download full backup (JSON)</button><button class="soft" style="width:100%;margin-top:8px" id="exportCsv">Export transactions (CSV)</button><label>Restore from JSON backup</label><input type="file" id="importFile" accept=".json,application/json"></div>
+ <div class="card"><h2>About your data</h2><div class="minirow"><span>Records saved</span><b id="recordCount">0</b></div><div class="minirow"><span>Storage</span><b>Local device</b></div><div class="minirow"><span>Google Drive</span><b>Manual JSON upload</b></div><div class="minirow"><span>Internet needed</span><b>No</b></div><div class="minirow"><span>Currency</span><b>Thai baht (THB)</b></div><div class="divider"></div><button class="danger" id="clearAll" style="width:100%">Delete all records</button></div>
+</section>
+<div class="foot">✡ My Money · A private ledger for thoughtful stewardship.</div>
+</div>
+<nav class="bottomnav"><button class="active" data-page="home"><span>⌂</span>Home</button><button data-page="records"><span>＋</span>Records</button><button data-page="budget"><span>▤</span>Budget</button><button data-page="data"><span>⇧</span>Backup</button></nav>
+<script>
+const $=id=>document.getElementById(id), KEY='mymoney-deluxe-v2';
+const today=()=>{let d=new Date();return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`},monthNow=()=>today().slice(0,7);
+const defaults=()=>({records:[],plan:{salary:13500,budget:10500,goal:3000,goalName:'Family / future fund',goalAmount:30000}});
+let db=defaults(),kind='expense';
+const money=n=>'฿'+Number(n||0).toLocaleString('en-US',{minimumFractionDigits:0,maximumFractionDigits:2});
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function load(){try{const x=JSON.parse(localStorage.getItem(KEY));if(x&&Array.isArray(x.records)&&x.plan)db=x}catch(e){}$('dashMonth').value=monthNow();$('filterMonth').value=monthNow();fillPlan();render()}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(db));render()}catch(e){alert('Could not save data. Export a backup and free device storage.')}}function recordsFor(m){return db.records.filter(r=>(r.date||'').slice(0,7)===m)}
+function sum(arr,k){return arr.filter(r=>r.kind===k).reduce((a,r)=>a+Number(r.amount||0),0)}
+function typeLabel(k){return {expense:'Expense',payment:'Salary received',salary:'Salary owed',saving:'Savings transfer'}[k]||k}
+function icon(k){return {expense:'↗',payment:'↙',salary:'◷',saving:'♧'}[k]||'•'}
+function render(){const m=$('dashMonth').value||monthNow(),rs=recordsFor(m),income=sum(rs,'payment'),expense=sum(rs,'expense'),owed=sum(rs,'salary'),saving=sum(rs,'saving'),net=income-expense;
+$('monthLabel').textContent=m;$('netMoney').textContent=money(net);$('homeIncome').textContent=money(income);$('homeExpense').textContent=money(expense);$('homeOwed').textContent=money(owed);$('homeSaving').textContent=money(saving);$('monthStatus').textContent=net<0?'Over received cash':'Cash flow';$('monthStatus').style.background=net<0?'#fff0ef':'#e7f5ed';$('budgetText').textContent=money(expense)+' / '+money(db.plan.budget);$('budgetLeft').textContent=money(db.plan.budget-expense)+(db.plan.budget-expense<0?' over':' left');$('budgetHint').textContent=db.plan.budget>0?Math.round(expense/db.plan.budget*100)+'% of spending budget used':'No spending limit';$('budgetProgress').classList.toggle('redbar',expense>db.plan.budget);$('budgetProgress').firstElementChild.style.width=(db.plan.budget?Math.min(100,expense/db.plan.budget*100):0)+'%';$('goalText').textContent=money(saving)+' / '+money(db.plan.goal);$('goalProgress').style.width=(db.plan.goal?Math.min(100,saving/db.plan.goal*100):0)+'%';$('goalHint').textContent=db.plan.goal?Math.round(saving/db.plan.goal*100)+'% of this month’s savings goal':'Set a monthly savings goal';
+$('snapExpected').textContent=money(db.plan.salary);$('snapReceived').textContent=money(income);$('snapOwed').textContent=money(owed);$('snapExpense').textContent=money(expense);$('snapSaving').textContent=money(saving);$('recordCount').textContent=db.records.length;
+const latest=[...db.records].map((r,i)=>({...r,_i:i})).sort((a,b)=>(b.date||'').localeCompare(a.date||'')||b._i-a._i);
+$('recentList').innerHTML=latest.slice(0,5).map(txHtml).join('')||'<div class="empty">Your money story starts here.<br>Add an expense or salary payment.</div>';
+const ft=$('filterType').value,fm=$('filterMonth').value;const filtered=latest.filter(r=>(ft==='all'||r.kind===ft)&&(!fm||(r.date||'').slice(0,7)===fm));$('allList').innerHTML=filtered.map(txHtml).join('')||'<div class="empty">No matching records.</div>';
+const cats={};rs.filter(r=>r.kind==='expense').forEach(r=>cats[r.category||'Other']=(cats[r.category||'Other']||0)+Number(r.amount));const entries=Object.entries(cats).sort((a,b)=>b[1]-a[1]),max=entries.length?entries[0][1]:1;$('categoryChart').innerHTML=entries.map(([c,v])=>`<div class="catrow"><span>${esc(c)}</span><div class="progress"><span style="width:${v/max*100}%"></span></div><b style="text-align:right">${money(v)}</b></div>`).join('')||'<div class="empty">Expenses by category will appear here.</div>';
+}
+function txHtml(r){let amt=(r.kind==='expense'?'-':r.kind==='salary'?'owed ':'+')+money(r.amount),cls=r.kind==='expense'?'red':r.kind==='salary'?'gold':r.kind==='saving'?'blue':'green';return `<div class="tx"><div class="txicon">${icon(r.kind)}</div><div class="txmain"><b>${esc(r.note||typeLabel(r.kind))}</b><small>${esc(r.date||'')} · ${esc(r.category||typeLabel(r.kind))}${r.salaryMonth?' · salary '+esc(r.salaryMonth):''}</small><div style="margin-top:5px"><button class="soft tiny" onclick="editRecord(${r._i})">Edit</button> <button class="danger tiny" onclick="deleteRecord(${r._i})">Delete</button></div></div><div class="txright"><b class="${cls}">${amt}</b><div><span class="badge">${typeLabel(r.kind)}</span></div></div></div>`}
+function go(page){document.querySelectorAll('.page').forEach(p=>p.classList.toggle('active',p.id==='page-'+page));document.querySelectorAll('[data-page]').forEach(b=>b.classList.toggle('active',b.dataset.page===page));window.scrollTo({top:0,behavior:'smooth'})}
+document.querySelectorAll('[data-page]').forEach(b=>b.addEventListener('click',()=>go(b.dataset.page)));
+function newRecord(k){go('records');resetForm();setKind(k);$('rDate').value=today();$('rSalaryMonth').value=monthNow();$('recordForm').scrollIntoView({behavior:'smooth',block:'start'})}
+function setKind(k){kind=k;document.querySelectorAll('[data-kind]').forEach(b=>b.classList.toggle('active',b.dataset.kind===k));$('categoryWrap').classList.toggle('hidden',k!=='expense');$('salaryMonthWrap').classList.toggle('hidden',k!=='salary'&&k!=='payment');$('submitRecord').textContent=({expense:'Save expense',payment:'Record salary payment',salary:'Record salary owed',saving:'Record savings'})[k]}
+document.querySelectorAll('[data-kind]').forEach(b=>b.onclick=()=>setKind(b.dataset.kind));
+function resetForm(){$('recordId').value='';$('rAmount').value='';$('rNote').value='';$('cancelEdit').classList.add('hidden');setKind('expense')}
+$('recordForm').onsubmit=e=>{e.preventDefault();let amount=Number($('rAmount').value);if(!(amount>0))return alert('Enter an amount above zero.');let date=$('rDate').value||today(),salaryMonth=$('rSalaryMonth').value||date.slice(0,7),rec={kind,amount,date,category:kind==='expense'?$('rCategory').value:typeLabel(kind),note:$('rNote').value.trim(),salaryMonth:(kind==='salary'||kind==='payment')?salaryMonth:''};let id=$('recordId').value;if(id!=='')db.records[Number(id)]=rec;else db.records.push(rec);resetForm();save();alert('Saved on this device.')};
+window.editRecord=i=>{let r=db.records[i];if(!r)return;go('records');$('recordId').value=i;$('rAmount').value=r.amount;$('rDate').value=r.date||today();$('rNote').value=r.note||'';$('rCategory').value=r.category||'Other';$('rSalaryMonth').value=r.salaryMonth||(r.date||today()).slice(0,7);setKind(r.kind);$('cancelEdit').classList.remove('hidden');$('recordForm').scrollIntoView({behavior:'smooth',block:'start'})};
+window.deleteRecord=i=>{if(confirm('Delete this transaction?')){db.records.splice(i,1);save()}};
+$('cancelEdit').onclick=resetForm;
+$('planForm').onsubmit=e=>{e.preventDefault();db.plan={salary:Number($('pSalary').value)||0,budget:Number($('pBudget').value)||0,goal:Number($('pGoal').value)||0,goalName:$('pGoalName').value.trim(),goalAmount:Number($('pGoalAmount').value)||0};save();alert('Budget and savings goals saved.')};
+function fillPlan(){$('pSalary').value=db.plan.salary;$('pBudget').value=db.plan.budget;$('pGoal').value=db.plan.goal;$('pGoalName').value=db.plan.goalName||'';$('pGoalAmount').value=db.plan.goalAmount||0}
+$('dashMonth').onchange=render;$('filterType').onchange=render;$('filterMonth').onchange=render;
+function download(name,content,type){const u=URL.createObjectURL(new Blob([content],{type})),a=document.createElement('a');a.href=u;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(u),1500)}
+$('exportJson').onclick=()=>download('my-money-backup-'+today()+'.json',JSON.stringify(db,null,2),'application/json');
+$('exportCsv').onclick=()=>{let rows=[['date','kind','amount_THB','category','note','salary_month'],...db.records.map(r=>[r.date,r.kind,r.amount,r.category,r.note,r.salaryMonth])];download('my-money-transactions-'+today()+'.csv','\ufeff'+rows.map(row=>row.map(v=>'"'+String(v??'').replace(/"/g,'""')+'"').join(',')).join('\r\n'),'text/csv')};
+$('importFile').onchange=async e=>{const f=e.target.files[0];if(!f)return;try{const x=JSON.parse(await f.text());if(!Array.isArray(x.records)||!x.plan)throw Error();if(confirm('Replace all current records with this backup?')){db=x;fillPlan();save();alert('Backup restored.')}}catch(err){alert('This file is not a valid My Money backup.')}e.target.value=''};
+$('clearAll').onclick=()=>{if(confirm('Delete all transactions and reset the budget? Export a backup first if needed.')&&confirm('Final confirmation: delete everything?')){db=defaults();fillPlan();save()}};
+load();
+</script></body></html>
